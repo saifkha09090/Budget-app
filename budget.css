@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+body {
+    background-color: #efefef;
+}
+
+/* header css */
+.header{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.logo-name-img{
+    display: flex;
+    justify-content: center;
+}
+.logo-img {
+    width: 22%;
+}
+.budget-heading{
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+/* main css */
+main{
+    width: 90%;
+    font-size: 17px;
+    margin: 1em auto;
+}
+.main-container{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+.add-exp-bud{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 18px;
+}
+.add-budget-box{
+    padding: 1.2em 1.8em;
+    border-radius: 0.6em;
+    box-shadow: 0 0 0.1em 0.1em rgb(23 22 25 / 35%);
+    margin-top: 2em;
+    width: 40%;
+}
+.bud-inp{
+    width: 100%;
+    height: 45px;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0 0 0.1em 0.1em rgb(23 22 25 / 35%);
+    margin: 1em 0;
+    padding: 0 15px;
+}
+.bud-inp:focus-visible{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bud-btn{
+    padding: 1em 1em;
+    border-radius: 1em;
+    border: none;
+    color: #fff;
+    background-color: #1f1fbf99;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.line{
+    margin: 16px 0px;
+    height: 10px;
+    background-color: #efefef;
+    border: none;
+}
+
+
+
+/* all amount total css  */
+.amounts-box-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #0000fa91;
+    padding: 1em;
+    border-radius: 4em;
+    color: #f0f8ff;
+}
+.bud-total{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.hide {
+    display: none;
+  }
+  .error {
+    color: #ff465a;
+  }
+
+
+
+/* expenses list css */
+.exp-list-container{
+    padding: 1.2em 1.2em;
+  border-radius: 0.6em;
+  box-shadow: 0 0 0.1em 0.1em rgb(23 22 25 / 35%);
+}
+.exp-list-container hr{  
+    width: 165px;
+    background-color: #efefef;
+    height: 4px;
+    border: none;
+}
+.list-box{
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #23de8e73;
+    border-radius: 1em;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-solid{
+    font-size: 18px;
+    background-color: #23de8e00;
+    border: none;
+    cursor: pointer;
+}
+.editbtn{
+    margin: 0 18px;
+}
+.descrip, .expnum{
+    width: 33%;
+}

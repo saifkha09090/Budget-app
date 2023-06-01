@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./budget.css" />
+    <script src="./app.js" defer></script>
+    <title>Budget App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-name-img">
+        <img class="logo-img" src="./budget logo.jpg" alt="budget logo" />
+        <h2 class="budget-heading">Budget</h2>
+      </div>
+      <div>
+        <h2>
+          <span id="month">month</span>
+          <span id="dt">date</span>
+          <span id="year">year</span>
+        </h2>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <!-- adding budgets and expenses forms -->
+        <div class="add-exp-bud">
+          <div class="add-budget-box">
+            <h2>Budget</h2>
+            <p class="hide error" id="bud-error">Please add input value</p>
+              <input type="number" class="bud-inp" id="bud-inp" />
+              <button class="bud-btn" id="bud-form">Add Budget</button>
+          </div>
+          <div class="add-budget-box">
+            <h2>Expenses</h2>
+            <p class="hide error" id="exp-error">Please fill all input value</p>
+              <input type="text" class="bud-inp" id="description" />
+              <input type="number" class="bud-inp" id="exp-num-inp" />
+              <input type="date" class="bud-inp" id="exp-date-inp" />
+              <button class="bud-btn" id="exp-form">Add Expenses</button>
+          </div>
+        </div>
+        <hr class="line" />
+        <!-- all amounts show box -->
+        <div class="amounts-box-container">
+          <div>
+            <h2>Total Budget</h2>
+            <span class="bud-total" id="bud-total">$0.00</span>
+          </div>
+          <div>
+            <h2>Total Expenses</h2>
+            <span class="bud-total" id="exp-total">$0.00</span>
+          </div>
+          <div>
+            <h2>Balance</h2>
+            <span class="bud-total" id="balance">$0.00</span>
+          </div>
+        </div>
+        <hr class="line" />
+        <!-- expenses list box -->
+        <div class="exp-list-container">
+          <h2>Expenses List</h2>
+          <hr />
+          <ul id="list">
+            <li class="list-box">
+              <span>grocery</span><span>$100</span><span>2023-3-2</span
+              ><button class="fa-solid fa-trash-can"></button
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
